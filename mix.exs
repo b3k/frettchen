@@ -13,8 +13,8 @@ defmodule Frettchen.Mixfile do
        files: Path.wildcard("thrift/**/*.thrift")
      ],
      name: "Frettchen",
-     source_url: "https://github.com/maxneuvians/frettchen",
-     homepage_url: "https://github.com/maxneuvians/frettchen",
+     source_url: "https://github.com/b3k/frettchen",
+     homepage_url: "https://github.com/b3k/frettchen",
      docs: [main: "Frettchen.Trace",
             extras: ["README.md"]
           ]
@@ -33,7 +33,7 @@ defmodule Frettchen.Mixfile do
       {:gen_stage, "~> 0.13"},
       {:httpoison, "~> 1.0"},
       {:socket, "~> 0.3", only: [:test]},
-      {:thrift, github: "thrift", tag: "1.3.2"}
+      {:thrift, github: "pinterest/elixir-thrift", tag: "1.3.2"}
     ]
   end
 
