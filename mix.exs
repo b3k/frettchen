@@ -33,7 +33,7 @@ defmodule Frettchen.Mixfile do
       {:gen_stage, "~> 0.13"},
       {:httpoison, "~> 1.0"},
       {:socket, "~> 0.3", only: [:test]},
-      {:thrift, github: "pinterest/elixir-thrift"}
+      {:thrift, github: "thrift", tag: "1.3.2"}
     ]
   end
 
